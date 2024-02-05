@@ -1,0 +1,25 @@
+.bg-primary {
+  background-color: #143331;
+}
+
+.text-white {
+  color: aliceblue;
+}
+
+.job-cards {
+  display: grid;
+
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .job-cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .job-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
